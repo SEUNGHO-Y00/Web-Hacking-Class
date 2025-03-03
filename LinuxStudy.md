@@ -65,23 +65,27 @@
     
 ## 6. Authentication
   - People need account for individual usages
+
  Part 1. UID/GID
     - UID: User ID
     - GID: Group ID
     - root: highest account
     - useradd normaltic       = create new account
     - su normaltic
+    
  Part 2. passwd
     - /etc/passwd    = user information in Linux
     - more /etc/passwd
     - vi /etc/passwd
     - 1. ID 2. password (/etc/shadow) 3. UID 4. GID 5. nickname of user 6. home directory 7. login shell (/usr/bin/nologin)
+      
  Part 3. rwx
     - r: read
     - w: write
     - x: execute
     - cd /tmp      = everyone can use this directory
     - (1) owner authentication / (2) Group authentication / (3) Extra user authentication
+    - 
  Part 4. Specialty Authority 
     (1) setuid - when the file is executed, it executes on owner of the file
                - -rws = setuid with execute authority
@@ -89,6 +93,7 @@
     (2) setgid - when the file is executed, it executes for group of the file
     (3) sticky bit - setting of directory
                    - anyone can create a file, but the creator only delete the created file.
+      
  Part 5. Change Authority
     - chmod
     - u         r
@@ -104,15 +109,17 @@
    Standard output stream, 1
    Standard error stream, 2
    File descriptor (fd):
+   
  Part 2. Redirection
    pwd > pwd_result    (>: redirection)
    pwd >> pwd_result    (>>: redirection without deleting information)
    For Hacking, when saving the file instead of the result of the command on the screen
+   
  Part 3. PIPE
    Process --> pipe --> process
    The output of one process makes the input of the other process
    A form of redirecting output to another destination for further processing.
    grep [finding pattern] [searching file / directory]
    ex) cat /etc/passwd | grep root
-#   ex) ifconfig | grep inet
-#   ex) ls /bin | grep "find"
+   ex) ifconfig | grep inet
+   ex) ls /bin | grep "find"
