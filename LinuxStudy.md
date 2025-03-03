@@ -11,7 +11,7 @@
      - Kali Linux download (https://www.kali.org/get-kali/#kali-platforms)
      - Install on UTM (https://www.youtube.com/watch?v=9zdjQ9w_v_4&ab_channel=KskRoyal)
         = Error Kali needs at least 30GB
-## Part 3. Command
+ Part 3. Command
      - CLI
      - Shell
      - Command Structure (1. Command 2. Argument 3. Option)
