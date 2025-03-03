@@ -2,15 +2,20 @@
 
 ## 01. Intro Linux
  Part 1. OS
+ 
  Part 2. History
+ 
  Part 3. OpenSource
 
 ## 02. Setting
  Part 1. Virtual Machine 
+ 
  Part 2. Kali Linux
+ 
      - Kali Linux download (https://www.kali.org/get-kali/#kali-platforms)
      - Install on UTM (https://www.youtube.com/watch?v=9zdjQ9w_v_4&ab_channel=KskRoyal)
         = Error Kali needs at least 30GB
+        
  Part 3. Command
      - CLI
      - Shell
@@ -19,13 +24,17 @@
 
 ## 03. Directory
  Part 1. Current directory - pwd
+ 
  Part 2. Directory movement 
      - Directory files check - ls
      - Change Directory - cd
+     
  Part 3. Home Directory (~) - cd ~
      - Switch User - su
+     
  Part 4. File information - ls [file name or directory path] -l
      - (.) hidden files => ls -a
+     
  Part 5. Kali Linux File System
      - /bin = Binary, execute files
      - /dev = device, connecting hardware device
@@ -35,6 +44,7 @@
      - /sbin = system administrator files
      - /tmp = temporary, anyone can use this directory, delete after shutdown
      - /var = save files in programs
+     
  Part 6. Absolute Path vs Relative Path
     - https://www.redhat.com/sysadmin/linux-path-absolute-relative
     - ./ = current location
@@ -46,18 +56,22 @@
     - Command mode (:w = Save, :q = exit)
     - Search (on command mode) = /[search word]
     - Specific line = :[line number] , line delete (dd)
+    
  Part 2. Check files
     - cat [txt file name]
     - It can read txt file only
     - file [file name] = text file type
     - more = it shows on the top
+    
  Part 3. COPY
     - cp cp_test ./Desktop/        = copy [src] [dst]
     - cp cp_test ./Desktop/copy_test    = change the file name
     - mkdir normal_dir          = create a folder
     - cp -r normal_dir ./copy_dir      = directory copy
+    
  Part 4. Remove
     - rm -r ./copy_dir       = remove directory // -f force remove
+    
  Part 5. Move
     - mv mv_test ./Desktop/
     - mv [current directory] [future directory]
