@@ -17,5 +17,17 @@
 
 ### Network Setting
 * MAC M1 virtual machine Network Error
-  - [NAT](https://www.comptia.org/content/guides/what-is-network-address-translation)
+  - Understanding [NAT](https://www.comptia.org/content/guides/what-is-network-address-translation)
   - [Solution](https://shape.host/resources/mastering-network-configuration-on-ubuntu-22-04-dhcp-and-static-ip-setup-for-single-and-multiple-nics)
+  - Or sudo dhclient
+* Termius = Connect IP address for a simple environment
+
+### Connection between server and development environment
+* File share - sudo python3 -m HTTP.server 80
+* Web file delivery
+* [SFTP](https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp)
+* Request from web browser
+
+* URL Rule
+* Commend = [Protocol]://[Domain or IP address]:[Port]/[File Path]
+* Web Root Path
