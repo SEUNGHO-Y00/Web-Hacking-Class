@@ -44,14 +44,14 @@
 
 * vscode - sftp plug in
 
-* --PHP SERVER
+* PHP SERVER
 * $_GET['name'] = a parameter through GET Method (*Parameter: elements inserted in your URLs to help you filter and organize content)
 * GET / POST = https://www.akto.io/academy/get-vs-post
 * Front-end vs Back-end
 * Back-end = Server-side code (PHP, ASP, JSP, ...)
 * Front-end = Client-side code, Browser side (HTML, CSS, Javascript, ...)
 
-* -- PHP
+* PHP
 * form function
 * method = "GET"            (php) $_GET['id']
 * method = "POST"           (php) $_POST['id']      * hidden URL, transfer method = request body
