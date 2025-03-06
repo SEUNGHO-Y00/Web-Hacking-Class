@@ -13,4 +13,10 @@
 
 ## Web Hacking
 
-1. [XSS Attach](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/tree/main)
+1.[Burp Suite]
+2.
+3.
+4.
+5.
+6.
+7. [XSS Attach](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/tree/main)
