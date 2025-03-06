@@ -106,7 +106,10 @@ c. CTF XSS 4
 
 d. CTF XSS 5
   - Error = In the board, it is possible to use special characters (<'">), but it converts &lt;
-  - Check the attack possibility of using an attack statement on the board => <script>alert(1)</script>
+  - Check the attack possibility of using an attack statement on the board
+```javascript
+<script>alert(1)</script>
+```
   - Using the Burp Suite, the website should be intercepted step by step
   - Create a new post and forward
   - Check the attack statement
