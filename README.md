@@ -1,4 +1,4 @@
-# Web-Hacking-Class
+# Web Hacking Class
 
 ## Understanding Operating System
 
