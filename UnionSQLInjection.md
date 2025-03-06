@@ -109,7 +109,7 @@ g. Find Data
 ```
 
 3. CTF questions<br>
-* SQL Injection 1
+* SQL Injection 1 <br>
 a. Find out the point of the SQL Injection
 ```javascript
 ad%' and 1=1 #
@@ -139,7 +139,7 @@ g. Find data
 ad%' union select flag, 2, 3, 4 from flag_table #
 ```
 
-*. SQL Injection 
+* SQL Injection <br>
 a. The point? = When I typed nomaltic, the information showed "My name is normaltic", but when I typed "admin", it doesn't show anything. Which means, depending on the name, the information changes. So, when it tried SQL injection "admin' or '1", it showed "my name is normaltic"
 b. The number of columns?
 ```javascript
