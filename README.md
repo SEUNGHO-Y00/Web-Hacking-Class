@@ -17,6 +17,6 @@
 2. [SQL Injection](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/SQLInjection.md)
 3. [Union SQL Injection](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/UnionSQLInjection.md)
 4. [Error Based SQL Injection & Blind-based SQL Injection](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/ErrorBasedSQLInjection.md)
-5. Find SQL Injection Point
+5. [Find SQL Injection Point](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/FindSQLInjectionPoint.md)
 6. XSS Vulnerability
 7. [XSS Attach](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/XSSattack.md)
