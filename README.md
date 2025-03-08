@@ -20,4 +20,9 @@
 5. [Find SQL Injection Point](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/FindSQLInjectionPoint.md)
 6. [XSS Vulnerability](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/XSSVulnerability.md)
 7. [XSS Attach](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/XSSattack.md)
-8.
+8. [XSS Client Script](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/XSSClientScript.md)
+9. [CSRF](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/CSRF.md)
+10. [CSRF vs XSS](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/CSRFvsXSS.md)
+11. [Web Shell](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/Webshell.md)
+12. [File Web Shell](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/FileWebShell.md)
+13. [Athentication%26Authorization](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/Athentication%26Authorization.md)
