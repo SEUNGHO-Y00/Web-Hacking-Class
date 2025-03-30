@@ -1,5 +1,10 @@
 # Python Hacking Study Note
 
+## Study Resource
+
+* [Introduction to Python](https://drive.google.com/file/d/1zVO65QK8t0CUzD7vjcMbLwOTtRi1AFYO/view)
+* [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+
 ## 1. Ready to Learn
 * Python character
   - interpreter language
