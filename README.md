@@ -1,5 +1,9 @@
 # Web Hacking Class
 
+## Web Hacking Practice Website
+
+* [Segfaulthub](http://ctf.segfaulthub.com/login?next=%2Fchallenges%3F)
+
 ## Understanding Operating System
 
 1. [Linux](https://github.com/SEUNGHO-Y00/Web-Hacking-Class/blob/main/LinuxStudy.md)
